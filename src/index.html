@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HMRC Practical Test</title>
+        <meta name="description" content="A short practical test">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to enjoy all the features of this site.</p>
+        <![endif]-->
+
+        <div class="page-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 pad-top-0">     
+                        <header class="masthead">
+                            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage"
+                            class="masthead-main">
+                                <span class="left max-height-inherit">
+                                    <img src="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png"
+                                    alt="HMRC logo" />
+                                </span>
+                                <span class="left max-height-inherit">
+                                    HM Revenue &amp; Customs
+                                </span>
+                            </a>
+                        </header>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <main class="main-content">
+                    <header>
+                        <h1>Renew your tax credits</h1>                        
+                    </header>
+
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">                            
+                                        <h3>Your details</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-lg-7">
+                                        Your National Insurance number                        
+                                    </div>
+                                    <div class="col-xs-2 col-lg-9">
+                                        <a id="ni-number-help-prompt" 
+                                        href="#" 
+                                        title="Show me where to find my National Insurance number"
+                                        class="in-page-link" 
+                                        rel="help"
+                                        style="display: none;">
+                                            Show me where to find this                  
+                                        </a>
+                                        <p id="ni-number-help-text" class="no-js italic">
+Some text would be here explaining where the user can find their National Insurance number. If JS is enabled, this copy is set to the anchor's title attribute and shown on-hover. If JS is NOT enabled, this block is shown and the anchor is hidden.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        <input name="input-ni-number" type="text" maxlength="9" required />
+                                    </div>
+                                </div>
+                                <div class="row pad-top-10">
+                                    <div class="col-lg-16">
+                                        <p>
+                                            Your tax credits renewal number is the 15 digit number on the bottom right hand corner of your annual declaration. Enter it below.
+                                        </p>               
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        <img class="how-to-graphic" src="images/how-to-graphic.png"
+                                        alt="How to find your credit renewals number graphic" />           
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        Your tax credits renewal number
+                                    </div>
+                                </div>                         
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        <input name="input-renewal-number" type="text" maxlength="20" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        <input type="submit" title="Submit the form" value="Next" />
+                                    </div>
+                                </div>                        
+                                <div class="row">
+                                    <div class="col-lg-16">
+                                        <a href="#" 
+                                        rel="help"
+                                        title="Get help with this page"
+                                        class="in-page-link">
+                                            Get help with this page
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>         
+            <div class="bg-grey">
+                <div class="container">
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-6 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-2 col-lg-16">
+                                        <nav class="footer-nav-list">
+                                            <a href="#" title="Help">Help</a>
+                                            <a href="#" title="Cookies">Cookies</a>
+                                            <a href="#" title="Privacy policy">Privacy policy</a>
+                                            <a href="#" title="Terms and conditions">Terms and conditions</a>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-lg-16 og-license">
+                                        <p>
+                                            <a href="#" class="og-license-logo" title="Find out more about Open Government Licence">
+                                            </a>
+                                            <span class="og-license-text">
+                                                All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-md-2 col-lg-6">
+                                <div class="copyright-notice">
+                                    <a href="#" title="Find out more about Crown Copyright">
+                                        &copy; Crown Copyright
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

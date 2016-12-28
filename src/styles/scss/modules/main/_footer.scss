@@ -1,0 +1,72 @@
+.footer {
+  background-color: $brand-grey;
+  width: 100%;
+  color: $brand-dark-grey;
+  padding-bottom: 20px;
+
+  @include fontSize(12px);
+
+  .footer-nav-list {
+    padding-top: 114px;
+
+    a {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  a {
+    color: $brand-dark-grey;
+
+    &:hover {
+      text-decoration: underline;
+      color: $brand-black;
+    }
+  }
+
+  .og-license {
+    .og-license-logo {
+      background: rgba(0, 0, 0, 0) url("https://assets.publishing.service.gov.uk/static/images/open-government-licence-c1aedc8257961b938b4c7a21a2b0db3f2716dd9ef782cea73110dc69107c9042.png") no-repeat scroll 0 0;
+      padding: 5px 0 5px 50px;
+      background-position: left bottom;
+    }
+
+    .og-license-text {
+      vertical-align: text-top;
+      line-height: 2.3;
+    }
+  }
+
+  .copyright-notice {
+    background-image: url("https://assets.publishing.service.gov.uk/static/images/govuk-crest-bb9e22aff7881b895c2ceb41d9340804451c474b883f09fe1b4026e76456f44b.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 5%;
+    padding-top: 150px;
+    text-align: right;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 0;
+    text-align: center;
+
+    .footer-nav-list {
+      padding-top: 0;
+    }
+
+    .copyright-notice {
+      text-align: center;
+      background-position: center;
+      padding-right: 0;
+    }
+  }
+}

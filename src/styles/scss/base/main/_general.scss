@@ -1,0 +1,81 @@
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both,
+.break {
+  clear: both;
+}
+
+.float-left,
+.left {
+  float: left;
+}
+
+.float-right,
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.break-word {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.height-inherit {
+  height: inherit;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.in-page-link {
+  @include fontSize(12px);
+}
+
+.pad-top-10 {
+  padding-top: 10px;
+}
+
+.pad-top-0 {
+  padding-top: 0px;
+}
+
+.max-height-inherit {
+  max-height: inherit;
+}

@@ -1,0 +1,24 @@
+.masthead {
+  border-top: 10px solid $brand-blue;
+  padding-top: 5px;
+
+  a {
+    text-decoration: none;
+    color: $brand-black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .masthead-main {
+    max-height: 30px;
+    display: inline-block;
+    line-height: 2;
+
+    img {
+      max-height: inherit;
+      padding-right: 10px;
+    }
+  }
+}

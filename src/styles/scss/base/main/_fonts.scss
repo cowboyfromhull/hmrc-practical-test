@@ -1,0 +1,88 @@
+// Font families
+$font-family-base: Arial;
+$base-font-size: 16px;
+$xs-font-size: 18px;
+
+// Global typography settings
+html {
+  color: $brand-black;
+  font-family: $font-family-base;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $base-font-size;
+
+  @media screen and (max-width: 479px) {
+    font-size: $xs-font-size;
+  }
+}
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: size / 10;
+
+  @return #{$remSize} rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Titles
+//////////
+h1, h2, h3, h4, h5, h6 {}
+
+@media screen and (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {}
+}
+
+h1 {
+  @include fontSize(36px);
+
+  @media screen and (max-width: 479px) {
+    @include fontSize(24px);
+  }
+
+  @media screen and (max-width: 767px) {
+    @include fontSize(24px);
+  }
+}
+
+h2 {
+  @include fontSize(24px);
+
+  @media screen and (max-width: 479px) {
+    @include fontSize(28px);
+  }
+
+  @media screen and (max-width: 767px) {
+    @include fontSize(28px);
+  }
+}
+
+h3 {
+  @include fontSize(18px);
+
+  @media screen and (max-width: 479px) {
+    @include fontSize(24px);
+  }
+
+  @media screen and (max-width: 767px) {
+    @include fontSize(24px);
+  }
+}
+
+h4 {
+  @include fontSize(20px);
+}
+
+h5 {
+  @include fontSize(20px);
+}
+
+h6 {
+  @include fontSize(18px);
+}
