@@ -26,7 +26,7 @@ window.hmrcNS = function() {
   }
 
   return {
-    doJsEnabledActions: () => {
+    doJsEnabledActions: function() {
       setNiNumberHelpText();
       hideNoJsContent();
     }
